@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conciencia Histórica | Multimedia y contacto</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <header class="chico">
+    <nav class="menu">
+      <a href="../index.html" class="logo">CONCIENCIA<span>HISTÓRICA</span></a>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="multimedia.html" class="activo">Multimedia</a></li>
+      </ul>
+    </nav>
+
+    <h1>Multimedia</h1>
+    <p>Video, audio y un formulario para que me dejes tu opinión.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Video</h2>
+      <video controls>
+        <source src="../video/LA REVOLUCIÓN MEXICANA EN 19 MINUTOS INFONIMADOS.mp4" type="video/mp4">
+        Tu navegador no admite la etiqueta de video.
+      </video>
+    </section>
+
+    <section>
+      <h2>Audio</h2>
+      <audio controls>
+        <source src="../audio/audio.mp3" type="audio/mpeg">
+        Tu navegador no admite la etiqueta de audio.
+      </audio>
+    </section>
+
+        <fieldset>
+          <legend>Sobre el proyecto</legend>
+
+<form action="https://formspree.io/f/xaeqorwv"
+method="POST"
+class="custom-form">
+          <label for="tema">¿Qué sección te gustó más?</label>
+          <select id="tema" name="tema">
+            <option value="">-- Elige una opción --</option>
+            <option value="inicio">Inicio</option>
+            <option value="historia">Historia</option>
+            <option value="multimedia">Multimedia</option>
+          </select>
+
+          <p style="margin-top:12px;"><strong>¿Te gusta Conciencia Histórica?</strong></p>
+          <label class="opcion"><input type="radio" name="gusto" value="si"> Sí</label>
+          <label class="opcion"><input type="radio" name="gusto" value="no"> No</label>
+
+          <p style="margin-top:12px;"><strong>¿Qué te gustaría aprender?</strong></p>
+          <label class="opcion"><input type="checkbox" name="interes" value="mexico"> Historia de México</label>
+          <label class="opcion"><input type="checkbox" name="interes" value="mundial"> Historia mundial</label>
+
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tu opinión..."></textarea>
+        </fieldset>
+
+        <button type="submit" class="boton">Enviar</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="historia.html">Historia</a>
+      <a href="multimedia.html">Multimedia</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
